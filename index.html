@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Code Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="login.html" target="_blank">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>IT Specialist Bio</title>
+                <style>
+                    body {
+                        padding: 20px; /* Add padding to the body */
+                    }
+                    p {
+                        margin-bottom: 20px; /* Add margin bottom to paragraph elements */
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>LESNAR GITONGA: IT Specialist & Polyglot Programmer</h1>
+                <p>
+                    <strong>About Me:</strong><br>
+                    Passionate IT specialist with a knack for mastering diverse programming languages. With extensive experience and a deep understanding of various coding paradigms, I thrive in dynamic environments where versatility is key. My journey in the tech world has equipped me with the skills to tackle complex challenges and deliver innovative solutions across multiple platforms.
+                </p>
+                <p>
+                    <strong>Expertise:</strong><br>
+                    - Proficient in an extensive array of programming languages including but not limited to Java, Python, C++, JavaScript, Ruby, Swift, and more.<br>
+                    - Skilled in software development, database management, system administration, and cybersecurity.<br>
+                    - Adept at adapting to new technologies and frameworks rapidly.
+                </p>
+                <p>
+                    <strong>Passions:</strong><br>
+                    - Embracing the ever-evolving landscape of technology and continuously expanding my knowledge base.<br>
+                    - Collaborating with diverse teams to tackle ambitious projects and drive impactful results.<br>
+                    - Advocating for inclusive and accessible tech solutions that empower individuals and communities.
+                </p>
+                <p>
+                    <strong>Vision:</strong><br>
+                    To leverage my expertise in IT and my proficiency in multiple programming languages to contribute to groundbreaking projects that push the boundaries of innovation. I aspire to be a catalyst for positive change in the tech industry, driving advancements that benefit society as a whole.
+                </p>
+            </body>
+            </html>
+            
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects covered this semester</h2>
+        <ul>
+          <li>
+            <h3>1.Grade Program for USIU</h3>
+            <p>A program to calculate grades based on the following criteria:</p>
+            <pre>
+90-100: A
+87-89: A-
+84-86: B+
+80-83: B
+77-79: C+
+74-76: C
+67-69: D+
+64-66: D
+62-63: D-
+0-59: F
+            </pre>
+            <p>Technologies used: [javascript]</p>
+            <p>Role: [Individual]</p>
+            <a href="#" data-toggle="modal" data-target="#codeModal" data-code-id="gradeProgram">View Code</a>
+          </li>
+          <li>
+            <h3>2.Family Tree in Prolog</h3>
+            <p>A Prolog program to represent and query a family tree.</p>
+            <p>Technologies used: Prolog</p>
+            <p>Role: [Individual]</p>
+            <a href="#" data-toggle="modal" data-target="#codeModal" data-code-id="familyTree">View Code</a>
+          </li>
+          <li>
+            <h3>3.Area of Shapes</h3>
+            <p>A program to calculate the area of different shapes.</p>
+            <p>Technologies used: [python]</p>
+            <p>Role: [Individual]</p>
+            <a href="#" data-toggle="modal" data-target="#codeModal" data-code-id="areaOfShapes">View Code</a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 @lesnar. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="codeModalLabel">Code</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <pre><code id="codeDisplay"></code></pre>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Code snippets -->
+    <div id="codeSnippets" style="display: none;">
+      <div id="gradeProgram">
+const gradeProgram = `
+function calculateGrade(score) {
+  let grade;
+
+  if (score >= 90 && score <= 100) {
+    grade = 'A';
+  } else if (score >= 87 && score <= 89) {
+    grade = 'A-';
+  } else if (score >= 84 && score <= 86) {
+    grade = 'B+';
+  } else if (score >= 80 && score <= 83) {
+    grade = 'B';
+  } else if (score >= 77 && score <= 79) {
+    grade = 'C+';
+  } else if (score >= 74 && score <= 76) {
+    grade = 'C';
+  } else if (score >= 67 && score <= 69) {
+    grade = 'D+';
+  } else if (score >= 64 && score <= 66) {
+    grade = 'D';
+  } else if (score >= 62 && score <= 63) {
+    grade = 'D-';
+  } else if (score >= 0 && score <= 59) {
+    grade = 'F';
+  } else {
+    grade = 'Invalid score';
+  }
+
+  return grade;
+}
+
+const score = 85; // Change this value to test different scores
+const result = calculateGrade(score);
+console.log('Score:', score);
+console.log('Grade:', result);
+`;
+      </div>
+      <div id="familyTree">
+        const familyTree = `
+        % Define family relationships
+        parent(john, susan).
+        parent(john, michael).
+        parent(jane, susan).
+        parent(jane, michael).
+        
+        male(john).
+        male(michael).
+        female(jane).
+        female(susan).
+        
+        % Define rules
+        father(X, Y) :- parent(X, Y), male(X).
+        mother(X, Y) :- parent(X, Y), female(X).
+        
+        sibling(X, Y) :- parent(Z, X), parent(Z, Y), X \= Y.
+        
+        grandfather(X, Y) :- parent(X, Z), parent(Z, Y), male(X).
+        grandmother(X, Y) :- parent(X, Z), parent(Z, Y), female(X).
+        
+        % Query examples
+        ?- father(john, X).    % Find John's children
+        ?- mother(jane, X).    % Find Jane's children
+        ?- sibling(susan, X).  % Find Susan's siblings
+        ?- grandfather(X, michael). % Find Michael's grandfather
+        ?- grandmother(X, susan).   % Find Susan's grandmother
+        `;
+      </div>
+      <div id="areaOfShapes">
+const areaOfShapes = `
+import math
+
+def calculate_rectangle_area(length, width):
+    area = length * width
+    return area
+
+def calculate_circle_area(radius):
+    area = math.pi * (radius ** 2)
+    return area
+
+def calculate_triangle_area(base, height):
+    area = 0.5 * base * height
+    return area
+
+# Example usage
+length = 5
+width = 3
+rectangle_area = calculate_rectangle_area(length, width)
+print(f"Area of rectangle with length {length} and width {width}: {rectangle_area}")
+
+radius = 4
+circle_area = calculate_circle_area(radius)
+print(f"Area of circle with radius {radius}: {circle_area}")
+
+base = 6
+height = 4
+triangle_area = calculate_triangle_area(base, height)
+print(f"Area of triangle with base {base} and height {height}: {triangle_area}")
+`;
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
